@@ -3,7 +3,7 @@ const axios = require("axios");
 module.exports = {
   name: "stats",
   execute(client, player, game) {
-    player = player.replace("_", " ");
+    player = player.replace(/_/g, " ");
 
     axios({
       method: "get",
