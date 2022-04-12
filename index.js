@@ -1,5 +1,6 @@
 const bedrock = require("bedrock-protocol");
 const config = require("./config.json");
+const chalk = require("chalk");
 const fs = require("fs");
 
 const client = bedrock.createClient({
@@ -19,6 +20,7 @@ for (const file of commandFiles) {
 }
 
 client.on("join", (packet) => {
+  console.log(chalk.blue("[GB] Connected."));
   setTimeout(() => {
     client.queue("command_request", {
       command: "/chat guild",
@@ -32,8 +34,8 @@ client.on("join", (packet) => {
       interval: false,
     });
 
-    console.log("this is being called");
-  }, 5000);
+    console.log(chalk.green("[GB] Enabled guild chat!"));
+  }, 3000);
 });
 
 client.on("text", ({ message }) => {

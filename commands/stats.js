@@ -16,14 +16,14 @@ module.exports = {
           source_name: client.username,
           xuid: "",
           platform_chat_id: "",
-          message: `${r.data.name} | WINS: ${r.data.extra.bwWins} | BEDS: ${
+          message: `${r.data.name} | Wins: ${r.data.extra.bwWins} | Beds: ${
             r.data.extra.bwBedsBroken
-          } | KILLS: ${r.data.extra.bwKills} | DEATHS: ${
+          } | Kills: ${r.data.extra.bwKills} | DEATHS: ${
             r.data.extra.bwDeaths
           } | KDR: ${
             Math.round((r.data.extra.bwKills / r.data.extra.bwDeaths) * 100) /
             100
-          } | FINALS: ${r.data.extra.bwFinalKills}`,
+          } | Finals: ${r.data.extra.bwFinalKills}`,
         });
       }
 
@@ -34,12 +34,12 @@ module.exports = {
           source_name: client.username,
           xuid: "",
           platform_chat_id: "",
-          message: `${r.data.name} | WINS: ${r.data.extra.swWins} | LOSSES: ${
+          message: `${r.data.name} | Wins: ${r.data.extra.swWins} | Losses: ${
             r.data.extra.swLosses
           } | WLR: ${
             Math.round((r.data.extra.swWins / r.data.extra.swLosses) * 100) /
             100
-          } | KILLS: ${r.data.extra.swKills} | DEATHS: ${
+          } | Kills: ${r.data.extra.swKills} | Deaths: ${
             r.data.extra.swDeaths
           } | KDR: ${
             Math.round((r.data.extra.swKills / r.data.extra.swDeaths) * 100) /
@@ -55,12 +55,12 @@ module.exports = {
           source_name: client.username,
           xuid: "",
           platform_chat_id: "",
-          message: `${r.data.name} | WINS: ${r.data.extra.tbWins} | LOSSES: ${
+          message: `${r.data.name} | Wins: ${r.data.extra.tbWins} | Losses: ${
             r.data.extra.tbLosses
           } | WLR: ${
             Math.round((r.data.extra.tbWins / r.data.extra.tbLosses) * 100) /
             100
-          } | GOALS: ${r.data.extra.tbGoals}`,
+          } | Goals: ${r.data.extra.tbGoals}`,
         });
       }
     });
